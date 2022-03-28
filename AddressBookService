@@ -17,8 +17,33 @@ mysql> show databases;
 +---------------------+
 7 rows in set (0.24 sec)
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 
 UC2: To create a Address Book Table
 
 CREATE TABLE Contact(FirstName varchar(30), LastName varchar(30), Address varchar(50), City varchar(50), Zip int, PhoneNumber int, Email varchar(50));
+Query OK, 0 rows affected (2.96 sec)
+
+mysql> desc AddressBook;
+    
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| FirstName   | varchar(30) | YES  |     | NULL    |       |
+| LastName    | varchar(30) | YES  |     | NULL    |       |
+| Address     | varchar(50) | YES  |     | NULL    |       |
+| City        | varchar(30) | YES  |     | NULL    |       |
+| State       | varchar(30) | YES  |     | NULL    |       |
+| Zip         | int         | YES  |     | NULL    |       |
+| PhoneNumber | int         | YES  |     | NULL    |       |
+| Email       | varchar(30) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+8 rows in set (0.14 sec)
+
+------------------------------------------------------------------------------------------------------------
+
+UC3: Insert a New contact 
+
+
+
+
