@@ -1,0 +1,24 @@
+UC1: Create a Address Book Service DB
+
+mysql> CREATE DATABASE AddressBookServices;
+Query OK, 1 row affected (0.14 sec)
+
+mysql> show databases;
++---------------------+
+| Database            |
++---------------------+
+| addressbookservices |
+| information_schema  |
+| mysql               |
+| performance_schema  |
+| sakila              |
+| sys                 |
+| world               |
++---------------------+
+7 rows in set (0.24 sec)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+UC2: To create a Address Book Table
+
+CREATE TABLE Contact(FirstName varchar(30), LastName varchar(30), Address varchar(50), City varchar(50), Zip int, PhoneNumber int, Email varchar(50));
